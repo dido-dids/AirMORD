@@ -9,8 +9,66 @@ public class UserAccountObject implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
+   @org.kie.api.definition.type.Label(value = "Firstname")
+   private java.lang.String firstname;
+   @org.kie.api.definition.type.Label(value = "surname")
+   private java.lang.String surname;
+   @org.kie.api.definition.type.Label(value = "Phone number")
+   private java.lang.String phone;
+   @org.kie.api.definition.type.Label(value = "Email")
+   private java.lang.String email;
+
    public UserAccountObject()
    {
+   }
+
+   public java.lang.String getFirstname()
+   {
+      return this.firstname;
+   }
+
+   public void setFirstname(java.lang.String firstname)
+   {
+      this.firstname = firstname;
+   }
+
+   public java.lang.String getSurname()
+   {
+      return this.surname;
+   }
+
+   public void setSurname(java.lang.String surname)
+   {
+      this.surname = surname;
+   }
+
+   public java.lang.String getPhone()
+   {
+      return this.phone;
+   }
+
+   public void setPhone(java.lang.String phone)
+   {
+      this.phone = phone;
+   }
+
+   public java.lang.String getEmail()
+   {
+      return this.email;
+   }
+
+   public void setEmail(java.lang.String email)
+   {
+      this.email = email;
+   }
+
+   public UserAccountObject(java.lang.String firstname, java.lang.String surname,
+         java.lang.String phone, java.lang.String email)
+   {
+      this.firstname = firstname;
+      this.surname = surname;
+      this.phone = phone;
+      this.email = email;
    }
 
 }
