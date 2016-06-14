@@ -9,14 +9,23 @@ public class UserAccountObject implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Firstname")
+   @org.kie.api.definition.type.Label("Firstname")
    private java.lang.String firstname;
-   @org.kie.api.definition.type.Label(value = "surname")
+   @org.kie.api.definition.type.Label("surname")
    private java.lang.String surname;
-   @org.kie.api.definition.type.Label(value = "Phone number")
+   @org.kie.api.definition.type.Label("Phone number")
    private java.lang.String phone;
-   @org.kie.api.definition.type.Label(value = "Email")
+   @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
+
+   @org.kie.api.definition.type.Label(value = "Password")
+   private java.lang.String password;
+
+   @org.kie.api.definition.type.Label(value = "Delivery Address")
+   private java.lang.String deliveryAddress;
+
+   @org.kie.api.definition.type.Label(value = "Billing address")
+   private java.lang.String billingAddress;
 
    public UserAccountObject()
    {
@@ -62,13 +71,48 @@ public class UserAccountObject implements java.io.Serializable
       this.email = email;
    }
 
+   public java.lang.String getPassword()
+   {
+      return this.password;
+   }
+
+   public void setPassword(java.lang.String password)
+   {
+      this.password = password;
+   }
+
+   public java.lang.String getDeliveryAddress()
+   {
+      return this.deliveryAddress;
+   }
+
+   public void setDeliveryAddress(java.lang.String deliveryAddress)
+   {
+      this.deliveryAddress = deliveryAddress;
+   }
+
+   public java.lang.String getBillingAddress()
+   {
+      return this.billingAddress;
+   }
+
+   public void setBillingAddress(java.lang.String billingAddress)
+   {
+      this.billingAddress = billingAddress;
+   }
+
    public UserAccountObject(java.lang.String firstname, java.lang.String surname,
-         java.lang.String phone, java.lang.String email)
+         java.lang.String phone, java.lang.String email,
+         java.lang.String password, java.lang.String deliveryAddress,
+         java.lang.String billingAddress)
    {
       this.firstname = firstname;
       this.surname = surname;
       this.phone = phone;
       this.email = email;
+      this.password = password;
+      this.deliveryAddress = deliveryAddress;
+      this.billingAddress = billingAddress;
    }
 
 }
