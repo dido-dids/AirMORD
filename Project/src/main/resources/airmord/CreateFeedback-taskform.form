@@ -4,7 +4,7 @@
 <property name="displayMode" value="aligned"/>
 <property name="labelMode" value="undefined"/>
 <property name="status" value="0"/>
-<field position="1" name="p_Feedback_email" type="InputText" id="1120104612">
+<field position="1" name="p_Feedback_email" type="InputTextEmail" id="1120104612">
 <property name="fieldRequired" value="true"/>
 <property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Email:quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -17,13 +17,15 @@
 <property name="outputBinding" value="t_Feedback/email"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="p_Feedback_message" type="InputText" id="2074786616">
+<field position="2" name="p_Feedback_message" type="InputTextArea" id="2074786616">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
+<property name="height" value="10"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Feedback message:quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="size" value="58"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="t_Feedback/message"/>
@@ -39,15 +41,6 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="t_Feedback/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="1228241026" type="InputTextArea" id="1228241026">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;InputTextArea4quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="size" value="50"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#BBBBBB" type="dataModelerEntry" outId="t_Feedback" value="airmord.FeedbackObject" id="p_Feedback"/>
