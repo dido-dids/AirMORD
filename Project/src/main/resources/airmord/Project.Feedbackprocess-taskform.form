@@ -3,25 +3,18 @@
 <property name="name" value="Project.Feedbackprocess-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="4" name="p_feedback_sent" type="CheckBox" id="2134464539">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;p_feedback_sent (p_feedback_sent)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="p_feedback_sent"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="3" name="p_active_user" type="CheckBox" id="164200767">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;p_active_user (p_active_user)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="p_active_user"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
 <field position="0" name="p_Feedback_email" type="InputText" id="2091365756">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;email (p_Feedback)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="p_Feedback/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="p_Feedback_message" type="InputText" id="929421048">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;message (p_Feedback)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_Feedback/message"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="p_Feedback_name" type="InputText" id="1210627396">
@@ -31,12 +24,19 @@
 <property name="outputBinding" value="p_Feedback/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="p_Feedback_message" type="InputText" id="929421048">
+<field position="3" name="p_active_user" type="CheckBox" id="164200767">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;message (p_Feedback)quot;"/>
+<property name="label" value="quot;enquot;,quot;p_active_user (p_active_user)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="p_Feedback/message"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="outputBinding" value="p_active_user"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="p_feedback_sent" type="CheckBox" id="2134464539">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;p_feedback_sent (p_feedback_sent)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="p_feedback_sent"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
 </field>
 <dataHolder inputId="" name="#BBBBBB" type="dataModelerEntry" outId="p_Feedback" value="airmord.FeedbackObject" id="p_Feedback"/>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="p_active_user" value="java.lang.Boolean" id="p_active_user"/>
